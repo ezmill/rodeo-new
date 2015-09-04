@@ -27,6 +27,7 @@
 			background: #ff6c00;
 			margin: 0;
 			padding: 0;
+			overflow-x:hidden;
 		}
 		a{
 			text-decoration: none;
@@ -54,6 +55,7 @@
 			font-size: 40px;
 			color: black;
 			font-family: "Helvetica";
+			margin: 0;
 		}
 		.page{
 			width: 100%;
@@ -64,6 +66,7 @@
 		}
 		.page.one{
 			top: 0;
+			/*background: blue;*/
 		}
 		.frontback{
 			width: 100%;
@@ -93,27 +96,30 @@
 		}
 		.page.two{
 			/*top: 100vh;*/
+			/*background: red;*/
 
 		}
 		.page.three{
+			/*background: blue;*/
 			/*top: 200vh;*/
 		}
 		.logo{
 			background: url(img/LOGO.svg) no-repeat;
 			background-size: cover;
 			background-position: center;
-			width: 490px;
-			height: 516px;
+			max-width: 500px;
+			width: 500px;
+			height: 500px;
 			margin: 0 auto;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			/*margin-top: 200px;*/
-			-webkit-transform: scale(1.0) translate(-50%, -50%);
-			   -moz-transform: scale(1.0) translate(-50%, -50%);
-			    -ms-transform: scale(1.0) translate(-50%, -50%);
-			     -o-transform: scale(1.0) translate(-50%, -50%);
-			        transform: scale(1.0) translate(-50%, -50%);
+			-webkit-transform: scale(0.5) translate(-100%, -100%);
+			   -moz-transform: scale(0.5) translate(-100%, -100%);
+			    -ms-transform: scale(0.5) translate(-100%, -100%);
+			     -o-transform: scale(0.5) translate(-100%, -100%);
+			        transform: scale(0.5) translate(-100%, -100%);
 		}
 		.store{
 			position: absolute;
@@ -127,6 +133,7 @@
 		}
 		.page.four{
 			/*top: 300vh;*/
+			/*background: red;*/
 		}
 		.rodeoart{
 			position: absolute;
@@ -143,9 +150,10 @@
 		}
 		.page.five{
 			/*top: 400vh;*/
+			/*background: blue;*/
 		}
 		.page.five img{
-			max-width: 200px;
+			max-width: 100px;
 			position: absolute; top: 0%;
 			left: 50%;
 			-webkit-transform: translate(-50%, 0%);
@@ -164,7 +172,8 @@
 			        transform: translateX(-50%);
 		}
 		.tour{
-			position: absolute; top: 50%;
+			position: absolute; 
+			top: 30%;
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			   -moz-transform: translate(-50%, -50%);
@@ -223,10 +232,10 @@
 			.heading{
 				font-size: 30px;
 			}
-			.logo{
-				width: 245px;
+			/*.logo{*/
+/*				width: 245px;
 				height: 258px;
-			}
+			}*/
 			.socials span{
 				margin: 5px;
 			}
@@ -251,7 +260,7 @@
 			.pre-order{
 				position: absolute; 
 				bottom: auto;
-				top: 85%;
+				top: 87%;
 				left: 50%;
 				-webkit-transform: translate(-50%, -85%);
 				   -moz-transform: translate(-50%, -85%);
