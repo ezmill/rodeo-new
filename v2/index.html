@@ -238,6 +238,27 @@
 				        /*transform: scale(0.5);*/
 				        font-size: 40px;
 			}
+			.page.one img{
+				width: 30%;
+				min-width: 250px;
+			}
+			.front{
+				margin-right: -50px;
+			}
+			.back{
+				margin-left: -60px;
+			}
+			.pre-order{
+				position: absolute; 
+				bottom: auto;
+				top: 85%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -85%);
+				   -moz-transform: translate(-50%, -85%);
+				    -ms-transform: translate(-50%, -85%);
+				     -o-transform: translate(-50%, -85%);
+				        transform: translate(-50%, -85%);
+			}
 		}
 		@media (max-width: 400px){
 			.heading{
@@ -251,7 +272,13 @@
 			}
 			.page.one img{
 				width: 30%;
-				min-width: 100px;
+				min-width: 200px;
+			}
+			.front{
+				margin-right: -50px;
+			}
+			.back{
+				margin-left: -50px;
 			}
 		}
 	</style>
@@ -260,8 +287,8 @@
 
 	<div class="page one">
 		<div class="frontback">
-			<img src="img/front.png" alt="">
-			<img src="img/back.png" alt="">
+			<img class="front" src="img/front.png" alt="">
+			<img class="back" src="img/back.png" alt="">
 		</div>
 		<h1 class="heading pre-order">PRE ORDER</h1>
 	</div>
