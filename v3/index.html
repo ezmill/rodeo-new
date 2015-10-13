@@ -190,13 +190,17 @@
 			/*margin: calc(25vh - 8px - 15px - 30px) auto;*/
 			padding: 5px;
 		}
-		.col{
+		.col, .denote{
 			display: inline-block;
 			text-align: left;
 			list-style: none;
 			font-family: "Helvetica Rounded";
 			font-size: 14px;
 
+		}
+		.denote{
+			display: block;
+			text-align: center;
 		}
 		.col:first-child{
 			float: left;
@@ -208,7 +212,7 @@
 		}
 		.socials{
 			position: absolute;
-			top: 93%;
+			top: 96%;
 			left: 50%;
 			-webkit-transform: translate(-50%, -75%);
 			    -ms-transform: translate(-50%, -75%);
@@ -227,6 +231,9 @@
 				width: 85%;
 			}
 			li{
+				font-size: 9px;
+			}
+			.denote{
 				font-size: 9px;
 			}
 			.heading{
@@ -282,6 +289,9 @@
 			li{
 				font-size: 7px;
 			}
+			.denote{
+				font-size: 7px;
+			}
 			.socials span i {
 				font-size: 20px;
 			}
@@ -335,6 +345,7 @@
 				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>11/05</li></a>		
 				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>11/06</li></a>	
 				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>11/07</li></a>
+				<a href="http://www.ticketmaster.com/event/05004F46AC9D233A"><li>11/09</li></a>
 				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>11/11</li></a>
 				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>11/12</li></a>
 				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>11/14</li></a>
@@ -342,6 +353,8 @@
 				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>11/16</li></a>
 				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>11/18</li></a>
 				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>11/19</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F3E02E26DA4"><li>11/21</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F4705477988"><li>11/22</li></a>
 				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>11/24</li></a>
 				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>11/27</li></a>
 				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>11/29</li></a>
@@ -355,12 +368,14 @@
 				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>12/15</li></a>
 				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>12/17</li></a>
 				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>12/19</li></a>
+				<!-- <a href=""><li></li></a> -->
 			</div>
 			<div class="col">
 				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>TORONTO, ON</li></a>
 				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>TORONTO, ON</li></a>
 				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>CHICAGO, IL</li></a>
 				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>DETROIT, MI</li></a>
+				<a href="http://www.ticketmaster.com/event/05004F46AC9D233A"><li>CLEVELAND, OH</li></a>
 				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>NEWARK, NJ</li></a>
 				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>WORCESTER, MA</li></a>
 				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>UNCASVILLE, CT</li></a>
@@ -368,6 +383,8 @@
 				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>NEW YORK, NY</li></a>
 				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>BROOKLYN, NY</li></a>
 				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>BROOKLYN, NY</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F3E02E26DA4"><li>PHILADELPHIA, PA</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F4705477988"><li>BOSTON, MA</li></a>
 				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>MONTREAL, QC</li></a>
 				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>WINNPEG, MB</li></a>
 				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>CALGARY, AB</li></a>
@@ -383,31 +400,37 @@
 				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>MIAMA, FL</li></a>
 			</div>
 			<div style="margin-left: 10px;" class="col">
-				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>AIR CANADA CENTER</li></a>
-				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>AIR CANADA CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>UNITED CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>PALACE OF AUBURN HILLS</li></a>
-				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>PRUDENTIAL CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>DCU CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>MOHEGAN SUN</li></a>
-				<a href="http://www.ticketmaster.com/event/15004F1243B85D71"><li>VERIZON CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>MSG</li></a>
-				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>BARCLAYS</li></a>
-				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>BARCLAYS</li></a>
-				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>BELL CENTRE</li></a>
-				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>MTS CENTRE</li></a>
-				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>SCOTIABANK SADDLEDOME</li></a>
-				<a href="http://www.ticketmaster.ca/event/11004F138C6480C2"><li>REXALL PLACE</li></a>
-				<a href="http://www.ticketmaster.ca/event/11004F1391298ACC"><li>ROGERS ARENA</li></a>
-				<a href="http://www.ticketmaster.com/event/1C004F13AA464120"><li>ORACLE</li></a>
-				<a href="http://www.ticketmaster.com/event/1C004F14E669755D"><li>SAP CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/09004F14DDAA4ED4"><li>FORUM</li></a>
-				<a href="http://www.ticketmaster.com/event/09004F17C4BF1AC3"><li>FORUM</li></a>
-				<a href="http://www.houstontoyotacenter.com/events/detail/the-weeknd"><li>TOYOTA CENTER</li></a>
-				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>PHILIPS ARENA</li></a>
-				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>AMALIE ARENA</li></a>
-				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>AMERICAN AIRLINES</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>AIR CANADA CENTER*</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>AIR CANADA CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>UNITED CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>PALACE OF AUBURN HILLS*</li></a>
+				<a href="http://www.ticketmaster.com/event/05004F46AC9D233A"><li>HOUSE OF BLUES</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>PRUDENTIAL CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>DCU CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>MOHEGAN SUN*</li></a>
+				<a href="http://www.ticketmaster.com/event/15004F1243B85D71"><li>VERIZON CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>MSG*</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>BARCLAYS*</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>BARCLAYS*</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F3E02E26DA4"><li>THE FILLMORE PHILLY</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F4705477988"><li>HOUSE OF BLUES</li></a>
+				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>BELL CENTRE*</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>MTS CENTRE*</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>SCOTIABANK SADDLEDOME*</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F138C6480C2"><li>REXALL PLACE*</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1391298ACC"><li>ROGERS ARENA*</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F13AA464120"><li>ORACLE*</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F14E669755D"><li>SAP CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F14DDAA4ED4"><li>FORUM*</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F17C4BF1AC3"><li>FORUM*</li></a>
+				<a href="http://www.houstontoyotacenter.com/events/detail/the-weeknd"><li>TOYOTA CENTER*</li></a>
+				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>PHILIPS ARENA*</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>AMALIE ARENA*</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>AMERICAN AIRLINES*</li></a>
+				<!-- <a href=""><li></li></a> -->
 			</div>
+			<li class="denote">*with The Weeknd</li>
+
 		</div>
 		<div class="socials">
 			<span><a target="_blank" href="http://twitter.com/trvisXX"><i class="social social-3x social-twitter"></i></a></span>
