@@ -41,7 +41,7 @@
 		}
 		@font-face {
 		    font-family: 'Helvetica Rounded';
-		    src: url('../font/HelveticaRounded-BlackObl.otf') format("opentype");
+		    src: url('font/HelveticaRounded-BlackObl.otf') format("opentype");
 		    font-weight: normal;
 		    font-style: normal;
 		}
@@ -49,7 +49,7 @@
 			font-style: oblique;
 			font-weight: bold;
 			font-size: 40px;
-			color: rgba(0,0,0,0.6);
+			color: rgba(0,0,0,1.0);
 			font-family: "Helvetica";
 			margin: 0;
 		}
@@ -79,11 +79,11 @@
 			        transform: translate(-50%,-50%);
 		}
 		.front{
-				margin-right: -50px;
-			}
-			.back{
-				margin-left: -50px;
-			}
+			margin-right: -50px;
+		}
+		.back{
+			margin-left: -50px;
+		}
 		.page.one img{
 			width: 436px;
 			min-width: 175px;
@@ -153,11 +153,16 @@
 		}
 		.page.five img{
 			max-width: 100px;
-			position: absolute; top: 0%;
+			position: absolute; 
+			top: 0%;
 			left: 50%;
 			-webkit-transform: translate(-50%, 0%);
 			    -ms-transform: translate(-50%, 0%);
 			        transform: translate(-50%, 0%);
+		}
+		.buy-button{
+			position: absolute;
+		    top: -17.5px;
 		}
 		.page.five h1{
 			position: absolute; top: 0;
@@ -168,7 +173,7 @@
 		}
 		.tour{
 			position: absolute; 
-			top: 30%;
+			top: 50%;
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			    -ms-transform: translate(-50%, -50%);
@@ -203,7 +208,7 @@
 		}
 		.socials{
 			position: absolute;
-			top: 65%;
+			top: 93%;
 			left: 50%;
 			-webkit-transform: translate(-50%, -75%);
 			    -ms-transform: translate(-50%, -75%);
@@ -297,20 +302,23 @@
 
 	<div class="page one">
 		<div class="frontback">
-			<img class="front" src="img/front.png" alt="">
-			<img class="back" src="img/back.png" alt="">
+			<img class="front" src="img/front.png" style="
+    -webkit-transform: scale(0.99);-ms-transform: scale(0.99);transform: scale(0.99);" alt="">
+			<img class="back" src="img/back.png" alt="" style="
+    -webkit-transform: scale(1.01) translateY(1%);-ms-transform: scale(1.01) translateY(1%);transform: scale(1.01) translateY(1%);
+">
 		</div>
-		<h1 class="heading pre-order">PRE ORDER</br><span class="coming-soon">COMING SOON</span></h1>
+		<h1 class="heading pre-order"><a target="_blank" href="http://travisscott.myshopify.com/products/travis-scott-action-figure" >PRE ORDER</a></h1>
 	</div>
 	<div class="page two">
-		<iframe style="width:100%;height:100%;text-align:left;" src="https://www.youtube.com/embed/osWZHU5GTyg" frameborder="0" allowfullscreen></iframe>
+		<iframe style="width:100%;height:100%;text-align:left;" src="https://www.youtube.com/embed/KnZ8h3MRuYg" frameborder="0" allowfullscreen></iframe>
 
 	</div>
 	<div class="page three">
 		<div class="logo">
 
 		</div>
-		<h1 style="z-index:10000000000" class="heading store">STORE</br><span class="coming-soon">COMING SOON</span></h1>
+		<h1 style="z-index:10000000000" class="heading store"><a target="_blank" href="http://travisscott.myshopify.com/">STORE</a></h1>
 
 	</div>
 	<div class="page four">
@@ -319,48 +327,86 @@
 	<div class="page five">
 		<div class="tour-container">
 		<!-- <a target="_blank" href="http://t.co/pw8DQuX0SE"><img src="img/itunes-pre.png" alt="" class="buy"></a> -->
-		<a href="http://t.co/pw8DQuX0SE"><img src="img/buyonitunes.png" alt=""></a>
+		<a class="buy-button" href="http://t.co/pw8DQuX0SE"><img src="img/buyonitunes.png" alt=""></a>
 		<!-- <h1 class="heading">DAYS AFTER RODEO</h1> -->
 		<div class="tour">
 			<div class="col">
-				<a href="http://www.ticketmaster.com/event/3A004F1C04E360FB"><li>9/04</li></a>
-				<a href="http://concerts.livenation.com/event/00004F1CC08582BB"><li>9/07</li></a>
-				<a href="http://concerts.livenation.com/event/00004F21A1A428DB"><li>9/08</li></a>
-				<a href="http://concerts.livenation.com/event/00004F13CEC7900E"><li>9/09</li></a>
-				<a href="http://m.ticketmaster.com/mad-decent-block-party-berkeley-california-09-11-2015/event/1C004E88F7076EC1"><li>9/11</li></a>
-				<a href="http://www.songkick.com/concerts/23445748-mad-decent-block-party-at-led"><li>9/13</li></a>
-				<a href="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=6093015&pl=observatory"><li>9/14</li></a>
-				<a href="http://www.axs.com/events/282203/travis-scott-tickets?undefined"><li>9/15</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>11/03</li></a>			
+				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>11/05</li></a>		
+				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>11/06</li></a>	
+				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>11/07</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>11/11</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>11/12</li></a>
+				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>11/14</li></a>
+				<a href="http://www.ticketmaster.com/event/15004F1243B85D71"><li>11/15</li></a>
+				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>11/16</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>11/18</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>11/19</li></a>
+				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>11/24</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>11/27</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>11/29</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F138C6480C2"><li>11/30</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1391298ACC"><li>12/02</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F13AA464120"><li>12/05</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F14E669755D"><li>12/06</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F14DDAA4ED4"><li>12/08</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F17C4BF1AC3"><li>12/09</li></a>
+				<a href="http://www.houstontoyotacenter.com/events/detail/the-weeknd"><li>12/13</li></a>
+				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>12/15</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>12/17</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>12/19</li></a>
 			</div>
 			<div class="col">
-				<a href="http://www.ticketmaster.com/event/3A004F1C04E360FB"><li>HOUSTON</li></a>
-				<a href="http://concerts.livenation.com/event/00004F1CC08582BB"><li>NEW YORK</li></a>
-				<a href="http://concerts.livenation.com/event/00004F21A1A428DB"><li>NEW YORK</li></a>
-				<a href="http://concerts.livenation.com/event/00004F13CEC7900E"><li>NEW YORK</li></a>
-				<a href="http://m.ticketmaster.com/mad-decent-block-party-berkeley-california-09-11-2015/event/1C004E88F7076EC1"><li>BERKELEY</li></a>
-				<a href="http://www.songkick.com/concerts/23445748-mad-decent-block-party-at-led"><li>SAN DIEGO</li></a>
-				<a href="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=6093015&pl=observatory"><li>SANTA ANA</li></a>
-				<a href="http://www.axs.com/events/282203/travis-scott-tickets?undefined"><li>LOS ANGELES</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>TORONTO, ON</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>TORONTO, ON</li></a>
+				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>CHICAGO, IL</li></a>
+				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>DETROIT, MI</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>NEWARK, NJ</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>WORCESTER, MA</li></a>
+				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>UNCASVILLE, CT</li></a>
+				<a href="http://www.ticketmaster.com/event/15004F1243B85D71"><li>WASHINGTON, DC</li></a>
+				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>NEW YORK, NY</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>BROOKLYN, NY</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>BROOKLYN, NY</li></a>
+				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>MONTREAL, QC</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>WINNPEG, MB</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>CALGARY, AB</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F138C6480C2"><li>EDMONTON, AB</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1391298ACC"><li>VANCOUVER, BC</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F13AA464120"><li>OAKLAND, CA</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F14E669755D"><li>SAN JOSE, CA</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F14DDAA4ED4"><li>INGLEWOOD, CA</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F17C4BF1AC3"><li>INGLEWOOD, CA</li></a>
+				<a href="http://www.houstontoyotacenter.com/events/detail/the-weeknd"><li>HOUSTON, TX</li></a>
+				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>ATLANTA, GA</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>TAMPA, FL</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>MIAMA, FL</li></a>
 			</div>
 			<div style="margin-left: 10px;" class="col">
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://www.ticketmaster.com/event/3A004F1C04E360FB"><li>HOUSE OF BLUES</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://concerts.livenation.com/event/00004F1CC08582BB"><li>GRAMERCY THEATRE</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://concerts.livenation.com/event/00004F21A1A428DB"><li>GRAMERCY THEATRE</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://concerts.livenation.com/event/00004F13CEC7900E"><li>GRAMERCY THEATRE</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://m.ticketmaster.com/mad-decent-block-party-berkeley-california-09-11-2015/event/1C004E88F7076EC1"><li>GREEK THEATRE</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://www.songkick.com/concerts/23445748-mad-decent-block-party-at-led"><li>PETCO PARK</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=6093015&pl=observatory"><li>THE OBSERVATORY</li></a>
-				<a style="text-decoration:line-through; text-decoration-color: #ff6c00;" href="http://www.axs.com/events/282203/travis-scott-tickets?undefined"><li>HENRY FONDA THEATRE</li></a>
-			</div>
-			<div class="col">
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
-				<li>SOLD OUT</li>
+				<a href="http://www.ticketmaster.ca/event/10004F13D39CB7E4"><li>AIR CANADA CENTER</li></a>
+				<a href="http://www.ticketmaster.ca/event/10004F14D702BBE1"><li>AIR CANADA CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/04004F13A7BC1D60"><li>UNITED CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/08004F15A9A73B7F"><li>PALACE OF AUBURN HILLS</li></a>
+				<a href="http://www.ticketmaster.com/event/02004F13F1EA876F"><li>PRUDENTIAL CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/01004F13339E7DB0"><li>DCU CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/1D004F14EFDD3285"><li>MOHEGAN SUN</li></a>
+				<a href="http://www.ticketmaster.com/event/15004F1243B85D71"><li>VERIZON CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/3B004F13ECFC1B74"><li>MSG</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F1394CB3434"><li>BARCLAYS</li></a>
+				<a href="http://www.ticketmaster.com/event/00004F15D78D858F"><li>BARCLAYS</li></a>
+				<a href="http://www.evenko.ca/html/tickets/theweeknd/index_en.html"><li>BELL CENTRE</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F13896C7DE0"><li>MTS CENTRE</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1492EB77AE"><li>SCOTIABANK SADDLEDOME</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F138C6480C2"><li>REXALL PLACE</li></a>
+				<a href="http://www.ticketmaster.ca/event/11004F1391298ACC"><li>ROGERS ARENA</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F13AA464120"><li>ORACLE</li></a>
+				<a href="http://www.ticketmaster.com/event/1C004F14E669755D"><li>SAP CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F14DDAA4ED4"><li>FORUM</li></a>
+				<a href="http://www.ticketmaster.com/event/09004F17C4BF1AC3"><li>FORUM</li></a>
+				<a href="http://www.houstontoyotacenter.com/events/detail/the-weeknd"><li>TOYOTA CENTER</li></a>
+				<a href="http://www.ticketmaster.com/event/0E004F1388D5265D"><li>PHILIPS ARENA</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13BBD87FE7"><li>AMALIE ARENA</li></a>
+				<a href="http://www.ticketmaster.com/event/0D004F13F4E89483"><li>AMERICAN AIRLINES</li></a>
 			</div>
 		</div>
 		<div class="socials">
